@@ -65,7 +65,8 @@ export default async function handler(req, res) {
                         <li>דף נחיתה לבית קפה: 2,200 ₪</li>
                         ${monthlySupport === 'yes' ? '<li>תמיכה שוטפת: 200 ₪ לחודש</li>' : ''}
                     </ul>
-                    <p><strong>סה"כ: 7,700 ₪ (לא כולל מע"מ)</strong></p>
+                    <p><strong>סה"כ פרויקט: 7,700 ₪ (לא כולל מע"מ)</strong></p>
+                    ${monthlySupport === 'yes' ? '<p><strong>+ תמיכה שוטפת: 200 ₪ לחודש (לא כולל מע"מ)</strong></p>' : ''}
                     
                     <hr>
                     <p><small>הודעה זו נשלחה מטופס אישור הצעת מחיר באתר 2Create</small></p>
@@ -90,7 +91,8 @@ export default async function handler(req, res) {
                         <li>דף נחיתה לבית קפה: 2,200 ₪</li>
                         ${monthlySupport === 'yes' ? '<li>תמיכה שוטפת: 200 ₪ לחודש</li>' : ''}
                     </ul>
-                    <p><strong>סה"כ: 7,700 ₪ (לא כולל מע"מ)</strong></p>
+                    <p><strong>סה"כ פרויקט: 7,700 ₪ (לא כולל מע"מ)</strong></p>
+                    ${monthlySupport === 'yes' ? '<p><strong>+ תמיכה שוטפת: 200 ₪ לחודש (לא כולל מע"מ)</strong></p>' : ''}
                     
                     <h3>השלבים הבאים:</h3>
                     <ol>
