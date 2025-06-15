@@ -47,22 +47,16 @@ body {
 }
 
 .logo-image {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
 }
 
-.logo-text h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #040240;
-    margin-bottom: 5px;
-}
-
-.logo-text p {
+.logo-tagline {
     font-size: 0.9rem;
     color: #7D8C0B;
     font-weight: 400;
+    margin: 0;
 }
 
 /* Buttons */
@@ -123,6 +117,21 @@ body {
     color: #7D8C0B;
     margin-bottom: 40px;
     font-weight: 400;
+}
+
+.hero-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-logo-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 .hero-decoration {
@@ -578,22 +587,16 @@ tr:hover td {
 }
 
 .footer-logo-image {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
     filter: brightness(0) invert(1);
 }
 
-.footer-logo-text h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #BFF205;
-}
-
-.footer-logo-text p {
+.footer-tagline {
     color: #ccc;
     font-size: 0.9rem;
+    margin: 0;
 }
 
 .footer-links p {
@@ -652,8 +655,8 @@ tr:hover td {
     }
     
     .logo-image {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
     
     .footer-logo {
@@ -662,8 +665,18 @@ tr:hover td {
     }
     
     .footer-logo-image {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .hero-logo-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero-logo-image {
+        width: 40px;
+        height: 40px;
     }
     
     th, td {
