@@ -44,17 +44,34 @@ document.addEventListener('DOMContentLoaded', function() {
                     body: JSON.stringify(data)
                 });
                 
+                // Check if response is ok
+                if (!response.ok) {
+                    throw new Error(`Server error: ${response.status} ${response.statusText}`);
+                }
+                
+                // Check if response is JSON
+                const contentType = response.headers.get('content-type');
+                if (!contentType || !contentType.includes('application/json')) {
+                    const text = await response.text();
+                    console.error('Non-JSON response:', text);
+                    throw new Error('השרת לא זמין כרגע. אנא נסו שנית מאוחר יותר.');
+                }
+                
                 const result = await response.json();
                 
                 if (result.success) {
                     showNotification('ההודעה נשלחה בהצלחה! נחזור אליכם בקרוב.', 'success');
                     this.reset();
                 } else {
-                    throw new Error(result.message);
+                    throw new Error(result.message || 'שגיאה לא ידועה');
                 }
             } catch (error) {
                 console.error('Error:', error);
-                showNotification('שגיאה בשליחת ההודעה. אנא נסו שנית או צרו קשר טלפונית.', 'error');
+                if (error.message.includes('Failed to fetch') || error.message.includes('NetworkError')) {
+                    showNotification('בעיית רשת. בדקו את החיבור לאינטרנט ונסו שנית.', 'error');
+                } else {
+                    showNotification(error.message || 'שגיאה בשליחת ההודעה. אנא נסו שנית או צרו קשר טלפונית.', 'error');
+                }
             } finally {
                 submitButton.textContent = originalText;
                 submitButton.disabled = false;
