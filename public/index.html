@@ -172,8 +172,8 @@
     <section id="contact" class="final-cta">
         <div class="container">
             <div class="cta-content">
-                <h2>מעוניין בהצעה מותאמת אישית?</h2>
-                <p>דברו איתנו היום ונבנה יחד את האתר המושלם עבורכם</p>
+                <h2>מאשר את הצעת המחיר?</h2>
+                <p>מלא את הפרטים למטה לאישור ההצעה ונתחיל לעבוד!</p>
                 
                 <!-- Contact Form -->
                 <form id="contactForm" class="contact-form">
@@ -184,12 +184,25 @@
                         <input type="email" id="email" name="email" placeholder="כתובת אימייל" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="מספר טלפון (אופציונלי)">
+                        <input type="tel" id="phone" name="phone" placeholder="מספר טלפון" required>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" name="message" placeholder="ספרו לנו על הפרויקט שלכם" rows="5"></textarea>
+                        <input type="text" id="company" name="company" placeholder="שם החברה (אופציונלי)">
                     </div>
-                    <button type="submit" class="cta-button primary">שלח בקשה</button>
+                    
+                    <!-- Support Option -->
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="monthlySupport" name="monthlySupport" value="yes">
+                            <span class="checkmark"></span>
+                            מעוניין בתמיכה שוטפת חודשית (200 ₪ לחודש)
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="הערות נוספות (אופציונלי)" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button primary">אשר הצעת מחיר</button>
                 </form>
 
                 <!-- Direct Contact Buttons -->
@@ -222,4 +235,5 @@
 
     <script src="script.js"></script>
 </body>
+</html> 
 </html> 

@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const result = await response.json();
                 
                 if (result.success) {
-                    showNotification('ההודעה נשלחה בהצלחה! נחזור אליכם בקרוב.', 'success');
+                    showNotification('🎉 הצעת המחיר אושרה בהצלחה! נשלח אליך מייל אישור ונחזור אליך תוך 24 שעות.', 'success');
                     this.reset();
                 } else {
                     throw new Error(result.message || 'שגיאה לא ידועה');
