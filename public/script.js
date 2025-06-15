@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 name: formData.get('name'),
                 email: formData.get('email'),
                 phone: formData.get('phone'),
+                company: formData.get('company'),
+                monthlySupport: formData.get('monthlySupport'),
                 message: formData.get('message')
             };
             
