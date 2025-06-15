@@ -2,6 +2,7 @@
   "name": "2create-quote-landing",
   "version": "1.0.0",
   "description": "דף נחיתה להצעת מחיר של 2Create",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
