@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             
             try {
-                const response = await fetch('/send-quote-request', {
+                const response = await fetch('/api/send-quote-request', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
