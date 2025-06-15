@@ -43,7 +43,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
 }
 
 .logo-image {
@@ -53,7 +53,7 @@ body {
 }
 
 .logo-tagline {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #7D8C0B;
     font-weight: 400;
     margin: 0;
@@ -117,21 +117,6 @@ body {
     color: #7D8C0B;
     margin-bottom: 40px;
     font-weight: 400;
-}
-
-.hero-logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-}
-
-.hero-logo-image {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
 }
 
 .hero-decoration {
@@ -583,7 +568,7 @@ tr:hover td {
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
 }
 
 .footer-logo-image {
@@ -650,7 +635,7 @@ tr:hover td {
     
     .logo {
         flex-direction: column;
-        gap: 8px;
+        gap: 10px;
         text-align: center;
     }
     
@@ -661,22 +646,12 @@ tr:hover td {
     
     .footer-logo {
         flex-direction: column;
-        gap: 8px;
+        gap: 10px;
     }
     
     .footer-logo-image {
         width: 50px;
         height: 50px;
-    }
-    
-    .hero-logo-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .hero-logo-image {
-        width: 40px;
-        height: 40px;
     }
     
     th, td {
